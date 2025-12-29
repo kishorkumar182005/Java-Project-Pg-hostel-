@@ -1,2 +1,4 @@
 # Java-Project-Pg-hostel-
-Pg name is Dubai gents Pg. This project is Booking the PGhostels
+Pg name is Dubai gents Pg. 
+Combined PG Booking Projects(using Frontend and Backend code)
+
