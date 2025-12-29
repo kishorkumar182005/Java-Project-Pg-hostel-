@@ -1,0 +1,81 @@
+.pg-slider-container {
+  max-width: 850px;
+  position: relative;
+  margin: auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.pg-slide {
+  display: none;
+}
+
+.pg-slide img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+/* Caption */
+.pg-caption {
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  font-size: 20px;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Next & Prev Buttons */
+.pg-prev, .pg-next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 14px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: .3s;
+  user-select: none;
+}
+
+.pg-prev:hover, .pg-next:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+.pg-prev { left: 0; }
+.pg-next { right: 0; }
+
+/* Dots */
+.pg-dots {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.pg-dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.pg-dot.active {
+  background-color: #2e6cff;
+}
+
+/* Fade Animation */
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
